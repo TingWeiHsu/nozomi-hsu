@@ -1,0 +1,243 @@
+@charset "UTF-8";
+/* ======================= css reset ========================== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Noto Sans TC', sans-serif, "微軟正黑體";
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ======================= css common style ========================== */
+a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: #f39a27;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  color: #333333;
+  letter-spacing: 1px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrap {
+  margin: 0 6vw;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 34px 0;
+}
+
+.navigation .navigation__title a {
+  font-size: 1.5rem;
+}
+
+.navigation .navigation__list a {
+  padding-right: 3vw;
+}
+
+.navigation .navigation__list a:nth-child(3) {
+  padding-right: 0;
+}
+
+.navigation .navigation__list a.navigation__list--active {
+  color: #f39a27;
+}
+
+.header__sec {
+  margin: 100px 4vw;
+}
+
+.header__sec .header__sec--title {
+  font-size: 3rem;
+}
+
+.header__sec .header__sec--title .text--largest {
+  font-size: 6.25rem;
+}
+
+.header__sec .header__sec--title .text--bolder {
+  font-weight: bold;
+}
+
+.header__sec .header__sec--para {
+  padding: 20px 10px;
+  line-height: 1.5;
+}
+
+.main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 4vw 46px 4vw;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__container .main__container__item {
+  width: 45%;
+  height: 210px;
+  position: relative;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.main__container .main__container__item .main__container__image--jsdc {
+  border-radius: 10px;
+  background-image: url("../image/homepage/jsdclogo.svg");
+  background-color: transparent;
+  height: 210px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+.main__container .main__container__item .main__container__img--about {
+  border-radius: 10px;
+  background-image: url("../image/homepage/17about.jpg");
+  background-color: transparent;
+  height: 210px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__container .main__container__item .main__container__img--hojya {
+  border-radius: 10px;
+  background-image: url("../image/homepage/hojya.png");
+  background-color: #F4F5F6;
+  height: 210px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__container .main__container__item .main__container__img--tea {
+  border-radius: 10px;
+  background-image: url("../image/homepage/tea.jpg");
+  background-color: transparent;
+  height: 210px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__container .main__container__item .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: rgba(243, 154, 39, 0.85);
+}
+
+.main__container .main__container__item .overlay .bolder-text {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  line-height: 1.5;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main__container .main__container__item:hover .overlay {
+  opacity: 1;
+}
+
+.footer {
+  margin: 150px 0 30px 4vw;
+}
+
+.footer .footer__infor {
+  padding-bottom: 50px;
+  line-height: 1.5;
+}
+
+.footer .footer__infor .text--theme {
+  padding-left: 15px;
+  color: #f39a27;
+}
+
+.footer .footer__copyright {
+  text-align: center;
+  padding-top: 30px;
+  color: #999999;
+}
+/*# sourceMappingURL=style.css.map */
