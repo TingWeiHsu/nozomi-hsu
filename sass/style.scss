@@ -135,3 +135,51 @@
         color: $color-gray;
     }
 }
+
+
+@media (max-width: 480px) {
+
+    .navigation {
+        display: block;
+        .navigation__list {
+            padding-top: 20px;
+        }
+    }
+
+    .header__sec{
+        margin: 80px 4vw 60px 4vw;
+        .header__sec--title{
+            font-size: $font-mob-title;
+            .text--largest{
+                font-size: $font-mob-big;
+            }
+            .text--bolder{
+                font-weight: bold;
+            }
+        }
+    }
+
+    .main__container{
+        display: block;
+        margin: 0px 4vw 0px 4vw;
+        .main__container__item{
+            width: 100%;
+            height: 210px;
+            margin: 28px 0;
+        }
+    }
+
+    .footer{
+        margin: 80px 4vw 28px 4vw;
+        .footer__infor{
+            br {
+                display: none;
+            }
+            .text--theme {
+                padding: 0 0;
+                display: block;
+            }
+        }
+    }
+
+}
