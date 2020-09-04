@@ -2,6 +2,13 @@
 
 .wrap{
     margin: 0 6vw;
+    background-color: #eeeeee;
+    background-image: url("../image/homepage/chalk_bg_white.svg");
+    background-repeat: repeat;
+}
+
+.gray_bg{
+    background-color: #f4f4f4;
 }
 
 .navigation {
@@ -25,20 +32,119 @@
 
 .header__sec{
     margin: 100px 4vw;
-    .header__sec--title{
-        font-size: $font-title;
-        .text--largest{
-            font-size: $font-big;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header__sec--information{
+        width:80vw;
+        .header__sec--title{
+            font-size: $font-title;
+            .text--largest{
+                font-size: $font-big;
+            }
+            .text--bolder{
+                font-weight: bold;
+            }
         }
-        .text--bolder{
-            font-weight: bold;
+        .header__sec--para{
+            padding: 20px 10px;
+            line-height: 1.5;
+        }
+        .header__link{
+            display: inline-block;
+            height: 32px;
+            width: 32px;
+            background-size: 32px;
+            margin: 0px 4px;
+        }
+        .link__media--linkedin{
+            margin: 0px 4px 0px 6px;
+            background-image: url(../image/media/linkedin.svg);
+            &:hover{
+                background-image: url(../image/media/linkedin-hover.svg);
+            }
+        }
+        .link__media--medium{
+            background-image: url(../image/media/medium.svg);
+            &:hover{
+                background-image: url(../image/media/medium-hover.svg);
+            }
+        }
+        .link__media--github{
+            background-image: url(../image/media/github.svg);
+            &:hover{
+                background-image: url(../image/media/github-hover.svg);
+            }
         }
     }
-    .header__sec--para{
-        padding: 20px 10px;
-        line-height: 1.5;
+    .header__sec--banner {
+        width: auto;
+        img{
+            width: 100%;
+        }
     }
 }
+
+.project__sec {
+    width:75%;
+    margin: 8vh auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+        & img {
+            border: 1px solid transparent;
+            border-radius: 16px;
+            width: 100%;
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(33, 33, 33, 0.75);
+            .project--box{
+                padding: 50px 56px;
+                border-radius: 10px 10px 0 0;
+                .project--box__title{
+                    font-size: $font-title;
+                    margin-bottom: 20px;
+                    color: #FFFFFF;
+                    line-height: 1.5;
+                }
+                .project--box__tag{
+                    display: inline-flex;
+                    padding: 8px;
+                    font-size: $font-default;
+                    color: $color-theme;
+                    border: 1px solid $color-theme;
+                    border-radius: 4px;
+                    margin: 4px;
+                }
+                .project--box__detail{
+                    margin-top: 12px;
+                    color: #fcfcfc;
+                    .detail--title{
+                        display: inline-block;
+                        width: 100px;
+                    }
+                }
+                .sec--locked{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+        &:hover .overlay {
+            opacity: 1;
+        }
+}
+
 
 .main__container{
     display: flex;
@@ -140,14 +246,15 @@
 @media (max-width: 480px) {
 
     .navigation {
-        display: block;
+        display: none;
         .navigation__list {
             padding-top: 20px;
         }
     }
 
     .header__sec{
-        margin: 80px 4vw 60px 4vw;
+        margin: 40px 1vw 60px 1vw;
+        display: block;
         .header__sec--title{
             font-size: $font-mob-title;
             .text--largest{
@@ -156,6 +263,14 @@
             .text--bolder{
                 font-weight: bold;
             }
+        }
+    }
+
+    .project__sec {
+        width:100%;
+        margin: 4vh auto;
+        .overlay{
+            display: none;
         }
     }
 
@@ -182,4 +297,29 @@
         }
     }
 
+}
+
+// under here are for new homepage version
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// this is for project part
+
+.project-title-17life{
+    width: auto;
+    height: 500px;
+    background-image: url("../image/projects/17life-app-icon-1024.png");
+    background-repeat:no-repeat;
+    background-position: center;
 }
