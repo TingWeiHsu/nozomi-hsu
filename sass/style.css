@@ -428,9 +428,19 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 .project-title-17life {
   width: auto;
-  height: 500px;
+  height: 300px;
   background-image: url("../image/projects/17life-app-icon-1024.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.project__tag {
+  display: inline-block;
+  padding: 12px 2rem;
+  border: 1px solid #999999;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  margin-right: 0.8rem;
+  margin-bottom: 12px;
 }
 /*# sourceMappingURL=style.css.map */
