@@ -188,6 +188,48 @@ h1, h2, h3, h4, h5, h6, p, li {
   width: 100%;
 }
 
+.project__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project__laber--items {
+  background-color: #fff;
+  width: auto;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 1rem;
+  color: #999999;
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 4px 16px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+}
+
+.project__laber--items:hover {
+  color: #fff;
+  background-color: #f39a27;
+  opacity: 0.8;
+  -webkit-box-shadow: 0 12px 16px 0 rgba(211, 211, 211, 0.24), 0 17px 50px 0 rgba(211, 211, 211, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(211, 211, 211, 0.24), 0 17px 50px 0 rgba(211, 211, 211, 0.19);
+}
+
+.label__items--active {
+  color: #fff;
+  background-color: #f39a27;
+}
+
 .project__sec {
   width: 75%;
   margin: 8vh auto;
@@ -376,6 +418,12 @@ h1, h2, h3, h4, h5, h6, p, li {
   text-align: center;
   padding-top: 30px;
   color: #999999;
+}
+
+@media (max-width: 850px) {
+  .project__label {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {

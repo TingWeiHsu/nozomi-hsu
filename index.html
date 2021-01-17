@@ -49,7 +49,15 @@
     </header>
 
     <main>
-        <div class="project__sec">
+        <div class="project__label">
+            <div class="project__laber--items label__items--active" onclick="showAll(); showActive(this)">All</div>
+            <div class="project__laber--items" onclick="showUi(); showActive(this)">UI Design</div>
+            <div class="project__laber--items" onclick="showUx(); showActive(this)">UX Design</div>
+            <div class="project__laber--items" onclick="showVisual(); showActive(this)">Visual Design</div>
+            <div class="project__laber--items" onclick="showDev(); showActive(this)">Web Development</div>
+        </div>
+
+        <div class="project__sec project__sec--UI project__sec--visual">
             <a href="https://www.behance.net/gallery/111537765/-Eatplosion-APP" target="_blank">
                 <img src="./image/homepage/eatplosion.jpg" alt="">
                 <div class="overlay">
@@ -66,7 +74,7 @@
             </a>
         </div>
 
-        <div class="project__sec">
+        <div class="project__sec project__sec--visual">
             <a href="https://www.behance.net/gallery/111534705/Res-Cofffee-Logo-" target="_blank">
                 <img src="./image/homepage/rescoffee.jpg" alt="">
                 <div class="overlay">
@@ -81,7 +89,7 @@
             </a>
         </div>
 
-        <div class="project__sec">
+        <div class="project__sec project__sec--UI project__sec--UX">
             <a href="https://link.medium.com/4LnDRym8u9" target="_blank">
                 <img src="./image/homepage/pizzahut_redesign_project.png" alt="">
                 <div class="overlay">
@@ -99,7 +107,7 @@
             </a>
         </div>
 
-        <div class="project__sec">
+        <div class="project__sec project__sec--visual">
             <a href="https://www.behance.net/gallery/88829731/JSDC2019-" target="_blank">
                 <img src="./image/homepage/jsdc__graphicdesign.png" alt="">
                 <div class="overlay">
@@ -115,7 +123,7 @@
             </a>
         </div>
 
-        <div class="project__sec">
+        <div class="project__sec project__sec--UI project__sec--dev">
             <a href="#" target="_blank" style="pointer-events: none;">
                 <img src="./image/homepage/richart_life_cardaily_redesign.png" alt="">
                 <div class="overlay">
@@ -134,7 +142,7 @@
             </a>
         </div>
 
-        <div class="project__sec">
+        <div class="project__sec project__sec--UI project__sec--dev">
             <a href="https://www.behance.net/gallery/88892265/17Life-Redesign-" target="_blank">
                 <img src="./image/homepage/17life_redesign.png" alt="" style="background-color: #ffffff;">
                 <div class="overlay">
@@ -150,7 +158,7 @@
             </a>
         </div>
 
-        <div class="project__sec">
+        <div class="project__sec project__sec--UI project__sec--visual project__sec--dev">
             <a href="https://hojya-taiwan-food.firebaseapp.com/index.html" target="_blank">
                 <img src="./image/homepage/hojya_project.png" alt="">
                 <div class="overlay">
@@ -216,5 +224,6 @@
         <div class="footer__copyright">© 2020 Nozomi Hsu </div>
     </footer>
     
+    <script src="js/index.js"></script>  
 </body>
 </html>
