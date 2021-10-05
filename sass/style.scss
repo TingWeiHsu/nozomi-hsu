@@ -2,7 +2,7 @@
 
 .wrap{
     margin: 0 6vw;
-    background-color: #eeeeee;
+    background-color: #ffffff;
     background-image: url("../image/homepage/chalk_bg_white.svg");
     background-repeat: repeat;
 }
@@ -47,8 +47,8 @@
             }
         }
         .header__sec--para{
-            padding: 20px 10px;
-            line-height: 1.5;
+            padding: 24px 0px;
+            line-height: 1.8;
         }
         .header__link{
             display: inline-block;
@@ -80,7 +80,7 @@
     .header__sec--banner {
         width: auto;
         img{
-            width: 100%;
+            width: 480px;
         }
     }
 }
@@ -100,7 +100,7 @@
     font-size: $font-default;
     color: $color-gray;
     display: inline-block;
-    border: none;
+    border: 1px solid #eeeeee;
     border-radius: 8px;
     cursor: pointer;
     margin: 4px 16px;
@@ -301,6 +301,11 @@
             }
             .text--bolder{
                 font-weight: bold;
+            }
+        }
+        .header__sec--banner {
+            img{
+                display: none;
             }
         }
     }

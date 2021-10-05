@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 .wrap {
   margin: 0 6vw;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   background-image: url("../image/homepage/chalk_bg_white.svg");
   background-repeat: repeat;
 }
@@ -143,8 +143,8 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 .header__sec .header__sec--information .header__sec--para {
-  padding: 20px 10px;
-  line-height: 1.5;
+  padding: 24px 0px;
+  line-height: 1.8;
 }
 
 .header__sec .header__sec--information .header__link {
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 
 .header__sec .header__sec--banner img {
-  width: 100%;
+  width: 480px;
 }
 
 .project__label {
@@ -200,7 +200,6 @@ h1, h2, h3, h4, h5, h6, p, li {
           justify-content: center;
 }
 
-
 .project__laber--items {
   background-color: #fff;
   width: auto;
@@ -209,7 +208,7 @@ h1, h2, h3, h4, h5, h6, p, li {
   font-size: 1rem;
   color: #999999;
   display: inline-block;
-  border: none;
+  border: 1px solid #eeeeee;
   border-radius: 8px;
   cursor: pointer;
   margin: 4px 16px;
@@ -446,6 +445,9 @@ h1, h2, h3, h4, h5, h6, p, li {
   }
   .header__sec .header__sec--title .text--bolder {
     font-weight: bold;
+  }
+  .header__sec .header__sec--banner img {
+    display: none;
   }
   .project__sec {
     width: 100%;
